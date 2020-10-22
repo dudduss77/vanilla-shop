@@ -36,7 +36,7 @@ body {
   grid-area: top;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #495057;
+  /* border-bottom: 1px solid #495057; */
 }
 
 #appWrapper__top__logo {
@@ -119,6 +119,7 @@ body {
 #appWrapper__content {
   width: 100%;
   grid-area: content;
+  overflow: hidden;
 }
 
 #appWrapper__footer {
@@ -151,4 +152,11 @@ body {
 }
 
 
-
+@media only screen and (max-width: 1000px) {
+  #appWrapper__top {
+    display: none;
+  }
+  #appWrapper__footer {
+    display: none;
+  }
+}
