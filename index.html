@@ -2,9 +2,11 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drony</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="slider/style.css">
 </head>
 <body>
   <div id="appWrapper">
@@ -26,7 +28,38 @@
       </div>
     </div>
     <div id="appWrapper__content">
-      content
+      
+
+      <div class="sliderWrapper">
+
+
+        <div class="slider__item">
+          <div class="slider__item__image" ></div>
+          <div class="slider__item__content">
+            <div class="slider__item__content__header">Nowy Mavic 2</div>
+            <div class="slider__item__content__desc">
+              Nowe możliwości, nowe doznania. Szybszy, bezpieczniejszy niż poprzednik. 
+              Najnowsza technologia pozwala na pozycjonowanie z dokładności do 1cm.
+            </div>
+            <button class="slider__item__content__button">Kup Teraz</button>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="slider__item__image" ></div>
+        </div>
+
+        <div class="slider__item">
+          <div class="slider__item__image" ></div>
+        </div>
+
+
+        <div id="sliderWrapper__leftArrow"><i class="fas fa-chevron-left"></i></div>
+        <div id="sliderWrapper__rightArrow"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+
+
     </div>
     <div id="appWrapper__footer">
       <div class="footer__col">
@@ -49,5 +82,7 @@
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
+  <script src="slider/slider.js"></script>
 </body>
 </html>
