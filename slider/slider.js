@@ -22,7 +22,7 @@ var sliderItems = document.getElementsByClassName('slider__item');
 document.addEventListener('DOMContentLoaded', checkArrowDisplay);
 
 for(let i = 0; i < sliderItems.length; i++) {
-  sliderItems[i].children[0].style.backgroundImage = "url('../slider/images/" + imagesArray[i].url + "')";
+  sliderItems[i].children[0].style.backgroundImage = "url('./slider/images/" + imagesArray[i].url + "')";
   sliderItems[i].style.transform = "translateX("+ i * 100+"%)";
 }
 
